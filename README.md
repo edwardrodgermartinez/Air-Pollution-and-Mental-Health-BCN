@@ -6,7 +6,7 @@
 
 Link to Tableau Story: 
 
-https://public.tableau.com/app/profile/edward.rodger.martinez/viz/EduProjectIV/Story1?publish=yes
+https://public.tableau.com/views/EduProjectIV/Story1?:language=en-GB&:display_count=n&:origin=viz_share_link
 
 ### Overview ###
 
@@ -54,11 +54,21 @@ Secondly, comparisons on gender should be taken with a pinch of salt due to the 
 
 Lastly, the database and reseach behind it is intended to explore short-term mental health effects of exposure to pollution - the changes we see in mood, sleep, wellbeing etc are small changes, since the timeline of the study is short. The correlations we look at are therefore smaller than they would be for another type of study (for example, correlation between smoking and long-term probability of getting lung cancer). 
 
-### 1. Age & District ###
+### Introduction ###
+
+This project will first focus on 3 possible biases in the data - these are the age and gender of the study participants, as well as the district of Barcelona in which they live. The purpose of this initial phase is to assess whether the study, which aims to show possible short term effects of air quality and green space on mental health, is affected by these biases - for example, if people in wealthier neighbourhoods are generally less likely to report high levels of stress.
+
+Having explored these biases, the project then focusses on the possible conclusions the study makes - these look at the effects of N02 concentration, hours spent in green and blue spaces, and hours spent outside, on participants' mental health. 
+
+### Age & District ###
 
 The first tableau dashboard shows 2 graphs - these are intended to explore whether the responses to the mental health survey changed significantly when looking at different age groups or different districts. 
 
+![Figure 1: Age](images/1.png)
+
 For age, there seems to be no significant change. This means that on average, older people or younger people in this database were not reporting more or less 'optimistically'. One conclusion I thought I might find from this as that younger people are more likely to report mental health issues such as anxiety, but this does not seem to be the case. 
+
+![Figure 2: District](images/2.png)
 
 For district, I arranged the bars for each district in order of 'richest' to 'poorest' districts, based on average salary in each district. I noticed 2 things; 
 
@@ -68,45 +78,54 @@ These neighbourhoods also reported the lowest levels of stress on average, while
 
 Of course, this touches on the important topic of the socio-economic roots of mental health. 
 
-### 2. Gender ###
+### Gender ###
+
+![Figure 3: Gender](images/3.png)
 
 This bar plot shows that while overall the average responses of men and women in this survey are quite similar, there are some exceptions; women on average reported higher stress levels, and men reported more time spent outside. 
 
 While comparing genders in this study is difficult due to the large majority of the participants being women, I chose to highlight this as it shows interesting avenues to take this kind of research into next steps. For example, do gender imbalances in domestic labour have effects on how often women or men go outside?
 
-### 3. Overview of Correlation between Variables ###
+### N02 Concentration ###
 
-This is an overview of how the different varibles in the dataset correlate. Through this large visualisation I chose the scatter plots with the clearest correlation:
+Having looked at these biases, we can now get into some of the study's conclusions. To do this, I looked at the correlation between different variables in the dataset. I noticed 3 areas of the study with a noticeable correlation. The first was the N02 concentration vs Stroop test performance, stress leves and sleep quality.
 
-N02 concentration vs Stroop test performance, stress levels and sleep quality; 
+In order to assess whether the differences mentioned earlier in gender were reflected in these visualisations, I added gender as the hue variable.
 
-Hours spent in green/blue spaces vs wellbeing and stress levels;
+![Figure 4: N02 Concentration](images/4.png)
 
-Hours spent outdoors vs occurrence of mental health issues and wellbeing.
+As we can see, a higher concentration of N02 is lightly correlated to: 
 
-In order to assess whether the differences mentioned earlier in gender were reflected in these, I added gender as the hue variable.
+Lower performance in the Stroop test (especially for women)
 
-### 4. N02 Concentration ###
+Higher reported stress levels among men
 
-A higher concentration of N02 is correlated to: 
+Lower reported sleep quality among men
 
-    - Lower performance in the Stroop test (especially for women)
-    - Higher reported stress levels (especially for men)
-    - Lower reported sleep quality (especially for men)
+### Hours Spent in Green and Blue Spaces ###
 
-### 5. Hours Spent in Green and Blue Spaces ###
+Another area with a noticeable correlation was number of hours spent in green/blue spaces vs reported wellbeing and stress levels;
 
-More hours spent in green and blue spaces, can be correlated to: 
+![Figure 5: Hours Green/Blue](images/5.png)
 
-    - Higher levels of reported wellbeing (especially for men)
-    - Lower levels of stress (especially for women)
+As we can see from the scatter plot, more hours spent in green and blue spaces, is correlated to: 
 
-### 6. Hours Spent Outside ###
+Higher levels of reported wellbeing (especially for men)
 
-More hours spent outside is correlated to: 
+Lower levels of stress (especially for women)
 
-    - Lower occurrence of mental health issues (especially for men)
-    - Higher levels of wellbeing (especially for men)
+### Hours Spent Outside ###
+
+Finally, the correlation between number of hours spent outdoors, and occurrence of mental health issues and reported wellbeing, is also noteworthy.
+
+![Figure 5: Hours Outside](images/6.png)
+
+
+As is visible from the light correlation in the scatter plot, more hours spent outside is correlated to: 
+
+Lower occurrence of mental health issues (especially for men)
+
+Higher levels of wellbeing (especially for men)
 
 ### Conclusions ###
 
