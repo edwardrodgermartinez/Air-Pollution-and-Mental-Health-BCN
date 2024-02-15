@@ -1,8 +1,8 @@
 # Project IV - Data Analysis on the Potential Effects of Air Pollution on Mental Health in Barcelona #
 
-## Edu Rodger ##
+## Edward Rodger Martinez - Ironhack ##
 
-### Ironhack ###
+![Cover](images/cover.png)
 
 Link to Tableau Story: 
 
