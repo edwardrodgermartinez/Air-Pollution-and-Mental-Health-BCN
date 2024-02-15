@@ -9,4 +9,3 @@ from src import clean_sql
 BCN_DATA = pd.read_csv('data/BCN_DATA.csv')
 
 clean_sql.clean_sql(BCN_DATA)
-
